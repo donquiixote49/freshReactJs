@@ -1,5 +1,5 @@
 
-import { createBrowserRouter, RouterProvider } from 'react-router-dom'
+import { createBrowserRouter, createHashRouter, RouterProvider } from 'react-router-dom'
 import Layout from './Components/Layout'
 import Home from './Components/Home'
 import Login from './Components/Login'
@@ -23,7 +23,7 @@ import AllOrders from './Components/AllOrders'
 function App() {
   
 
-  let routes = createBrowserRouter([{
+  let routes = createHashRouter([{
 
     path:'/',element:<Layout></Layout>, children:[
       {index:true, element:<ProtectedRoute><Home></Home></ProtectedRoute>},
