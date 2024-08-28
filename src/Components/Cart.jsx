@@ -36,7 +36,7 @@ export default function Cart() {
 
       {data?.numOfCartItems ? (
         <div className="my-5">
-          <div className="flex justify-between">
+          <div className="md:flex justify-between">
             <div>
               <h2 className="my-10 fa-2xl font-semibold ">
                 Cart Items :{" "}

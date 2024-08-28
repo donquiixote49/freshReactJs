@@ -68,11 +68,11 @@ let formik = useFormik({
 
   return (
     <div>
-      <div className='flex flex-col gap-y-4  items-center mt-4 '>
+      <div className='flex flex-col gap-y-4  items-center mt-4  '>
       <Button variant='contained' color='success'  onClick={()=>{handleOpen()
       setFlag(!flag)
       }}>Online Payment</Button>
-      <Button variant='contained' color='success'  onClick={handleOpen}>Cash Payment</Button>
+      <Button variant='contained' color='success' sx={{mb:'12px'}}  onClick={handleOpen}>Cash Payment</Button>
       </div>
       <Modal
         open={open}
